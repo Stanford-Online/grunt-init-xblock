@@ -16,11 +16,11 @@
     - [ ] `./{%= namePackage %}/private/edit.html`
         - Add `<LI>` entries to `<ul class="list-input settings-list">` for each new field
     - [ ] `./{%= namePackage %}/private/edit.js`
-        - Add entry for each field to `{%= nameClass %}Edit
+        - Add entry for each field to `{%= nameClass %}Edit`
     - [ ] `./{%= namePackage %}/private/edit.less`
         - Add styles to `.{%= namePackage %}_edit { }` block (if needed)
     - [ ] `./{%= namePackage %}/{%= namePackage %}.py`
-        - Add entry for each field to `{%= studio_view_save %}`
+        - Add entry for each field to `studio_view_save`
 - [ ] Update package metadata
     - [ ] `./package.json`
         - https://www.npmjs.org/doc/files/package.json.html

@@ -184,11 +184,11 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'jshint',
-        'csslint',
         'concat',
         'copy',
-        'uglify',
         'less',
+        'csslint',
+        'uglify',
         'htmlmin',
     ]);
 };
