@@ -42,8 +42,12 @@ class {%= nameClass %}(XBlock):
         """
         fragment = self.build_fragment(
             path_html='view.html',
-            path_css='view.less.min.css',
-            path_js='view.js.min.js',
+            paths_css=[
+                'view.less.min.css',
+            ],
+            paths_js=[
+                'view.js.min.js',
+            ],
             fragment_js='{%= nameClass %}View',
         )
         return fragment
@@ -56,8 +60,12 @@ class {%= nameClass %}(XBlock):
         """
         fragment = self.build_fragment(
             path_html='edit.html',
-            path_css='edit.less.min.css',
-            path_js='edit.js.min.js',
+            paths_css=[
+                'edit.less.min.css',
+            ],
+            paths_js=[
+                'edit.js.min.js',
+            ],
             fragment_js='{%= nameClass %}Edit',
         )
         return fragment
@@ -94,9 +102,11 @@ class {%= nameClass %}(XBlock):
 
     def build_fragment(self,
         path_html='',
-        path_css=None,
-        path_js=None,
-        fragment_js=None
+        paths_css=[],
+        paths_js=[],
+        urls_css=[],
+        urls_js=[],
+        fragment_js=None,
     ):
         """
         Assemble the HTML, JS, and CSS for an XBlock fragment
@@ -106,12 +116,16 @@ class {%= nameClass %}(XBlock):
             self=self,
         )
         fragment = Fragment(html_source)
-        if path_css:
-            css_url = self.get_resource_url(path_css)
-            fragment.add_css_url(css_url)
-        if path_js:
-            js_url = self.get_resource_url(path_js)
-            fragment.add_javascript_url(js_url)
+        for url in urls_css:
+            fragment.add_css_url(url)
+        for path in paths_css:
+            url = self.get_resource_url(path)
+            fragment.add_css_url(url)
+        for url in urls_js:
+            fragment.add_javascript_url(url)
+        for path in paths_js:
+            url = self.get_resource_url(path)
+            fragment.add_javascript_url(url)
         if fragment_js:
             fragment.initialize_js(fragment_js)
         return fragment
