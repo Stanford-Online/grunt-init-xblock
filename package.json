@@ -25,6 +25,8 @@
     "grunt-contrib-jshint": "^0.10.0"
   },
   "keywords": [
+    "grunt",
+    "grunt-init",
     "stanford",
     "openedx",
     "xblock",
