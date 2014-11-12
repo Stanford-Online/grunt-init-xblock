@@ -19,7 +19,7 @@
     "nonbsp"        : true,     // true: Prohibit "non-breaking whitespace" characters.
     "nonew"         : true,     // true: Prohibit use of constructors for side-effects (without assignment)
     "plusplus"      : true,     // true: Prohibit use of `++` & `--`
-    "quotmark"      : single,   // Quotation mark consistency:
+    "quotmark"      : "single", // Quotation mark consistency:
                                 //   false    : do nothing (default)
                                 //   true     : ensure whatever is used is consistent
                                 //   "single" : require single quotes
