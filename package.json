@@ -3,7 +3,7 @@
   "title": "Grunt XBlock Template",
   "description": "A grunt-init template for OpenEdX XBlocks",
   "version": "0.1.0",
-  "homepage": "https://github.com/Stanford-Online/xblock-factory",
+  "homepage": "https://github.com/Stanford-Online/grunt-init-xblock",
   "author": {
     "name": "stv",
     "url": "https://github.com/stvstnfrd"
@@ -11,10 +11,10 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Stanford-Online/xblock-factory"
+    "url": "git://github.com/Stanford-Online/grunt-init-xblock"
   },
   "bugs": {
-    "url": "https://github.com/Stanford-Online/xblock-factory/issues"
+    "url": "https://github.com/Stanford-Online/grunt-init-xblock/issues"
   },
   "scripts": {
     "test": "node_modules/jshint/bin/jshint ./*.js"
