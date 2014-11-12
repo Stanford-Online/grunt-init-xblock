@@ -17,7 +17,7 @@
     "url": "https://github.com/Stanford-Online/xblock-factory/issues"
   },
   "scripts": {
-    "test": "node_modules/jshint/bin/jshint ./*.js ./*.json"
+    "test": "node_modules/jshint/bin/jshint ./*.js"
   },
   "devDependencies": {
     "jshint": "^2.5.10"

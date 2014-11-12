@@ -60,20 +60,20 @@ exports.template = function template(grunt, init, done) {
             properties.keywords = properties.keywords.split(' ');
         }
         properties.scripts = {
-            "test": "grunt --verbose"
+            'test': 'grunt --verbose'
         };
         properties.devDependencies = {
-            "grunt": "^0.4.5",
-            "grunt-contrib-jshint": "^0.10.0",
-            "grunt-contrib-concat": "^0.5.0",
-            "grunt-contrib-uglify": "^0.6.0",
-            "grunt-contrib-less": "^0.11.4",
-            "grunt-contrib-csslint": "^0.3.1",
-            "grunt-contrib-cssmin": "^0.10.0",
-            "grunt-contrib-watch": "^0.6.1",
-            "grunt-contrib-copy": "^0.6.0",
-            "grunt-contrib-clean": "^0.6.0",
-            "grunt-contrib-htmlmin": "^0.3.0",
+            'grunt': '^0.4.5',
+            'grunt-contrib-jshint': '^0.10.0',
+            'grunt-contrib-concat': '^0.5.0',
+            'grunt-contrib-uglify': '^0.6.0',
+            'grunt-contrib-less': '^0.11.4',
+            'grunt-contrib-csslint': '^0.3.1',
+            'grunt-contrib-cssmin': '^0.10.0',
+            'grunt-contrib-watch': '^0.6.1',
+            'grunt-contrib-copy': '^0.6.0',
+            'grunt-contrib-clean': '^0.6.0',
+            'grunt-contrib-htmlmin': '^0.3.0',
         };
 
         init.copyAndProcess(files, properties);
