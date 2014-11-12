@@ -17,12 +17,10 @@
     "url": "https://github.com/Stanford-Online/xblock-factory/issues"
   },
   "scripts": {
-    "test": "grunt --verbose"
+    "test": "node_modules/jshint/bin/jshint ./*.js ./*.json"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-init": "^0.3.2",
-    "grunt-contrib-jshint": "^0.10.0"
+    "jshint": "^2.5.10"
   },
   "keywords": [
     "grunt",
