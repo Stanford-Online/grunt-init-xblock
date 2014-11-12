@@ -1,7 +1,7 @@
 {
-  "name": "xblock-factory",
-  "title": "XBlock Factory",
-  "description": "A template for production-ready XBlocks.",
+  "name": "grunt-init-xblock",
+  "title": "Grunt XBlock Template",
+  "description": "A grunt-init template for OpenEdX XBlocks",
   "version": "0.1.0",
   "homepage": "https://github.com/Stanford-Online/xblock-factory",
   "author": {
