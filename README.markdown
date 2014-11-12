@@ -1,25 +1,24 @@
-# XBlock Factory
+# grunt-init-xblock
+Create an XBlock package for the OpenEdX platform
 
-## Setup:
-1. [Fork this repo in Github.](https://github.com/Stanford-Online/xblock-factory/fork)
-2. Rename your new repo in Github.
-3. Clone your repo.
-    - `git clone ${YOUR_PROJECT_REPO} ${YOUR_PROJECT_PATH}`
-4. Enter your project directory.
-    - `cd ${YOUR_PROJECT_PATH}`
-5. Run the bootstrap script.
-    - `./bootstrap.sh`
+## Prerequisites
+```shell
+apt-get install nodejs
+npm install -g grunt-init
+```
 
-## Develop
-1. Run the `watch` task.
-    - `grunt watch`
-2. Edit files.
-    - Note: you should only edit static files (HTML, CSS, JS) inside of
-      the `private/` directory and _not_ the copies inside `public/`.
-    - The `public/` directory is recreated and overwritten automatically
-      by `grunt`, which compiles and minifies static content.
-    - While `grunt watch` will update files automatically when they
-      change, you can manually build/lint your project by invoking the
-      build task with `grunt`.
-3. ???
-4. Profit!
+## Installation
+```shell
+git clone https://github.com/Stanford-Online/grunt-init-xblock.git ~/.grunt-init/xblock
+```
+
+## Usage
+```shell
+mkdir MY_PROJECT
+cd MY_PROJECT
+grunt-init xblock
+```
+
+## TODO
+- write about the advantages of this template
+- explain the gist of what happens under the hood

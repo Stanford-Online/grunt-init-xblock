@@ -1,4 +1,2 @@
-*.egg-info/
 node_modules/
-*.pyc
 *.sw[op]
