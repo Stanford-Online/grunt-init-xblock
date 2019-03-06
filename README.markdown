@@ -22,3 +22,8 @@ grunt-init xblock
 ## TODO
 - write about the advantages of this template
 - explain the gist of what happens under the hood
+
+
+## DEPRECATED
+This is no longer supported.
+It should not be used.
